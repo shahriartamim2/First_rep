@@ -1,0 +1,43 @@
+print("Welcome to quiz game")
+playing = input("Please \n Type Y to start the game \n or \n Type anything to exit the game ")
+if playing.lower() != "y":
+    quit()
+print("Okay Let's play")
+score = 0
+ans = input("What is the full meaning of CPU? ")
+if ans.lower()== "central processing unit":
+    print("Correct")
+    score+=1
+else:
+    print("incorrect")
+
+ans = input("What is the full meaning of RAM? ")
+if ans.lower()== "random access memory":
+    print("Correct")
+    score+=1
+else:
+    print("Incorrect")
+
+ans = input("What is the full meaning of ROM? ")
+if ans.lower()== "read only memory":
+    print("Correct")
+    score+=1
+else:
+    print("Incorrect")
+
+ans = input("What is the full meaning of GPU? ")
+if ans.lower()== "gaming processing unit":
+    print("Correct")
+    score+=1
+else:
+    print("Incorrect")
+
+ans = input("What is the full meaning of API? ")
+if ans.lower()== "appication programming interface":
+    print("Correct")
+    score+=1
+else:
+    print("Incorrect")
+
+print("Game Over")
+print("New score = "  ,score)
